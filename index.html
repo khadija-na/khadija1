@@ -1,0 +1,497 @@
+ 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez des recettes saines et équilibrées pour une alimentation saine et un mode de vie actif.">
+    <title>Healthy Food</title>
+
+    <style>
+        /* Global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #9c8766;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Arial', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style-type: none;
+            color: rgb(162, 82, 82);
+        }
+
+        /* Header */
+        header {
+            background-color: #b0a6a2;
+            color: #a13030;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo h1 {
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url(./khadija/healtyh\ food\ 1.jpg) no-repeat center center/cover;
+            color: #fff;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #8d8579;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #bd6758;
+        }
+
+        /* Recipe Section */
+        #recettes {
+            padding: 40px 20px;
+            background-color: #d2ccbd;
+            text-align: center;
+        }
+
+        #recettes h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .recipe-cards {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .recipe-card {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 280px;
+            box-shadow: 0 4px 8px rgb(151, 144, 129);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .recipe-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .recipe-card h3 {
+            margin: 15px 0;
+            font-size: 1.6rem;
+        }
+
+        .recipe-card p {
+            padding: 0 10px;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Conseils Section */
+        #conseils {
+            background-color: #e9f5f3;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        #conseils h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #conseils ul {
+            font-size: 1.2rem;
+        }
+
+        #conseils li {
+            margin: 10px 0;
+        }
+
+        /* About Section */
+        #about {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #a7a38f;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 1rem;
+        }
+
+        /* Media Queries for responsiveness */
+        @media screen and (max-width: 768px) {
+            .recipe-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-button {
+                width: 100%;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Healthy Food</h1>
+        </div>
+        <nav>
+            <ul>
+                <li style="color: rgb(163, 156, 134);"><a href="#home">Accueil</a></li>
+                <li><a href="#recettes">Recettes</a></li>
+                <li><a href="#conseils">Conseils</a></li>
+                <li><a href="#about">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Bien manger, c'est la clé du bien-être !</h2>
+            <p style="color: rgb(32, 144, 152);">Explorez des recettes saines et des conseils pour maintenir un mode de vie équilibré.</p>
+            <a href="#recettes" class="cta-button">Découvrir les recettes</a>
+        </div>
+    </section>
+
+    <section id="recettes">
+        <h2>Nos Recettes Saines</h2>
+        <div class="recipe-cards">
+            <div class="recipe-card">
+                <img src="./healthy food 2.jpeg" alt="Salade de quinoa">
+                <h3>Salade de quinoa</h3>
+                <p>Un plat léger, riche en protéines et parfait pour l'été.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="./healthy food 33.jpg" alt="Smoothie bowl">
+                <h3>Smoothie Bowl</h3>
+                <p>Un petit-déjeuner nourrissant et plein de vitamines.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="./healthy food 4.jpg" alt="Grilled Chicken">
+                <h3>Poulet Grillé</h3>
+                <p>Un plat simple et protéiné pour un déjeuner équilibré.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="conseils">
+        <h2>Conseils pour une alimentation saine</h2>
+        <ul>
+            <li>Manger des légumes à chaque repas.</li>
+            <li>Privilégier les protéines maigres comme le poulet et le poisson.</li>
+            <li>Boire beaucoup d'eau, au moins 2 litres par jour.</li>
+            <li>Éviter les sucres raffinés et les aliments ultra-transformés.</li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>À propos de nous</h2>
+        <p>Healthy Food est une plateforme dédiée à vous aider à adopter une alimentation saine et équilibrée. Nous partageons des recettes, des conseils et des informations pour vous accompagner dans votre quête de bien-être.</p>
+    </section>
+
+    
+    <script>
+        // Simple script for adding a dynamic effect (e.g., scrolling to sections smoothly)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+ 
+ 
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: #847562;
+    }
+
+    
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1, h2, h3 {
+      margin: 20px 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #f00;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* Section: Menu */
+    .menu {
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    .menu h2 {
+      margin-bottom: 20px;
+    }
+
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .menu-item {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 200px;
+      padding: 10px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(126, 119, 91, 0.1);
+      text-align: center;
+    }
+
+    .menu-item img {
+      border-radius: 5px;
+    }
+
+    .menu-item h3 {
+      margin: 10px 0;
+    }
+
+    .menu-item p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #958181;
+    }
+
+    .menu-item button {
+      background-color: #f00;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .menu-item button:hover {
+      background-color: #c00;
+    }
+
+    /* Section: Features */
+    .features {
+      background-color: #f9f9f9;
+      padding: 40px 0;
+    }
+
+    .features .feature-list {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+    }
+
+    .features .feature {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .features .feature img {
+      width: 80px;
+       
+      margin-bottom: 10px;
+       
+    }
+
+    /* Section: Map */
+    .map {
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+
+    /* Footer */
+    footer {
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .menu-items, .features .feature-list {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>healthy food</h1>
+  <p>commander votre plat préféré!</p>
+</header>
+
+<section class="menu container">
+  <h2>notre menu</h2>
+  <div class="menu-items">
+    <div class="menu-item">
+      <img src="healthy food 5.jpg" alt="Double Burger">
+      <h3>avocado salade</h3>
+      <p>$25.00</p>
+      <button>commander en ligne</button>
+    </div>
+    <div class="menu-item">
+      <img src="./healthy food 6.jpg" alt="Chicken Burger">
+      <h3>bol de burrito</h3>
+      <p>$9.50</p>
+      <button> commander en ligne</button>
+    </div>
+    <div class="menu-item">
+      <img src="healtyh food 7.jpg" alt="Mexican Burger">
+      <h3>salade de poulet</h3>
+      <p>$12.50</p>
+      <button> commander en ligne</button>
+    </div>
+    <div class="menu-item">
+      <img src="healthy food 8.jpg" alt="Mini Burger">
+      <h3> pouller Grillé</h3>
+      <p>$10.90</p>
+      <button> commander en ligne</button>
+    </div>
+    <div class="menu-item">
+      <img src="./healthy food 9.jpg" alt="Classic Burger">
+      <h3>avocado salade</h3>
+      <p>$13.90</p>
+      <button>commander en ligne </button>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <div class="feature-list">
+      <div class="feature">
+        <img src="./marker.png2.png" alt="Fast Delivery">
+        <h3>livraison rapide</h3>
+        <p>  nous livrons votre repas rapidement a votre porte.</p>
+      </div>
+      <div class="feature">
+        <img src="./heart.png1.png" alt="Fresh Food">
+        <h3> nourriture fraiche</h3>
+        <p> seuls les meilleurs ingrediénts pour vos repas.</p>
+      </div>
+      <div class="feature">
+        <img src="./user.png" alt="Experienced Chefs">
+        <h3> chefs expérimentés</h3>
+        <p>nos équipes sont composées de chefs professionnels.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="map">
+  <h2> trouvez-nous</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.836368549426!2d-122.42009968515642!3d37.7749292797586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064f07ef663%3A0x4b5772e9611f3b16!2sFast%20Food!5e0!3m2!1sen!2sus!4v1637883704546!5m2!1sen!2sus"></iframe>
+</section>
+
+<footer>
+  <p>&copy; 2025 healthy food.  tous droits réservés.</p>
+</footer>
+
+</body>
+</html> 
